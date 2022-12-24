@@ -2,7 +2,6 @@ import React from 'react'
 
 import { GrayImg } from '../../shared/GrayImg'
 
-import './style.css'
 
 export const Planet = () => {
     return (
