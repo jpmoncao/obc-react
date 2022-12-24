@@ -5,12 +5,19 @@ import { GrayImg } from '../../shared/GrayImg'
 
 
 export const Planet = props => {
+    let title
+    
+    if(props.titleWithUnderline)
+        title = <u><h4>{props.name}</h4></u>
+    else
+        title = <h4>{props.name}</h4>
+
     return (
         <div>
             <hr />
-            <h4>{props.name}</h4>
+            {title}
             <DescriptionWithLink text={props.desc} descUrl={props.descUrl}/> <br/>
-            <GrayImg imgUrl={props.imgUrl} />
+            <GrayImg imgUrl={props.imgUrl} gray={props.grayImg}/>
         </div>
     )
 }

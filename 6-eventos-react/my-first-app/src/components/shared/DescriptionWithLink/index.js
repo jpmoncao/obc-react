@@ -1,10 +1,20 @@
 import React, { Fragment } from 'react'
 
 export const DescriptionWithLink = props => {
-    return (
-        <Fragment>
-            <p>{props.text}</p>
-            <a href={props.descUrl}>Confira mais</a>
-        </Fragment>
-    )
+    if (props.descUrl) {
+        return (
+            <Fragment>
+                <p>{props.text}</p>
+                <p>
+                    <a href={props.descUrl}>Confira mais</a>
+                </p>
+            </Fragment>
+        )
+    } else {
+        return (
+            <Fragment>
+                <p>{props.text}</p>
+            </Fragment>
+        )
+    }
 }
