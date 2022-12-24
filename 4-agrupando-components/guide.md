@@ -67,3 +67,50 @@
         )
     }
 ```
+
+
+# Props
+
+## Criando um component flexível
+> A props permite a alteração de um component dependendo das propriedades que ele recebe
+```javascript
+    // GrayImg
+    export const GrayImg = props => {
+        return (
+            <Fragment>
+                <img class='gray-image' src={props.imgUrl} />
+            </Fragment>
+        )
+    }
+```
+> O parâmetro props são os atributos que o elemento recebe na sua aplicação, como em Planet
+```javascript
+    // Aplicação em Planet
+    <GrayImg imgUrl='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/280px-Mercury_in_color_-_Prockter07-edit1.jpg' />
+    {/* imgUrl é acessada por props.imgUrl */}
+```
+
+#
+## Props do component Planet
+> Para torna-lô flexível, vamos usar as propos também aqui
+```javascript
+    // Planet
+    export const Planet = props => {
+        return (
+            <div>
+                <h4>{props.name}</h4>
+                <p>{props.desc}</p>
+                <GrayImg imgUrl={props.imgUrl} />
+            </div>
+        )
+    }
+```
+> E passaremos os atributos para a props
+```javascript
+    // Uso de Planet em Planets
+    <Planet
+        name='Mercúrio'
+        desc='Mercúrio é o menor e mais interno planeta do Sistema Solar, orbitando o Sol a cada 87,969 dias terrestres. A sua órbita tem a maior excentricidade e o seu eixo apresenta a menor inclinação em relação ao plano da órbita dentre todos os planetas do Sistema Solar. Mercúrio completa três rotações em torno de seu eixo a cada duas órbitas.'
+        imgUrl='https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mercury_in_color_-_Prockter07-edit1.jpg/280px-Mercury_in_color_-_Prockter07-edit1.jpg'
+    />
+```
