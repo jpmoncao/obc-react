@@ -5,6 +5,8 @@ import { GrayImg } from '../../shared/GrayImg'
 
 
 export const Planet = props => {
+    const names = ['a', 'b', 'c', 'd', 'e', 'f']
+
     let title
 
     if (props.titleWithUnderline)
@@ -18,6 +20,15 @@ export const Planet = props => {
             {title}
             <DescriptionWithLink text={props.desc} descUrl={props.descUrl} /> <br />
             <GrayImg imgUrl={props.imgUrl} gray={props.grayImg} />
+
+            <h4>Satélites</h4>
+            <ul>
+                {
+                    names.map(name =>
+                        <li>Satélite {name}</li>
+                    )
+                }
+            </ul>
         </div>
     )
 }
