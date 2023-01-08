@@ -1,0 +1,26 @@
+{
+  "planets": [
+    {
+      "id": "mars",
+      "name": "Mars",
+      "desc": "Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System after Mercury. In English, Mars carries a name of the Roman god of war and is often referred to as the 'Red Planet'.",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/OSIRIS_Mars_true_color.jpg/220px-OSIRIS_Mars_true_color.jpg",
+      "descUrl": "https://en.wikipedia.org/wiki/Mars"
+    },
+    {
+      "id": "pluto",
+      "name": "Pluto",
+      "desc": "Pluto (minor planet designation: 134340 Pluto) is a dwarf planet in the Kuiper belt, a ring of bodies beyond Neptune. It was the first Kuiper belt object to be discovered and is the largest known plutoid (or ice dwarf).",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/Pluto_in_True_Color_-_High-Res.jpg/280px-Pluto_in_True_Color_-_High-Res.jpg",
+      "descUrl": "https://en.wikipedia.org/wiki/Pluto"
+    },    
+    {
+      "id": "uranus",
+      "name": "Uranus",
+      "desc": "Uranus (from the Latin name Ūranus for the Greek god Οὐρανός) is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
+      "imgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/280px-Uranus2.jpg",
+      "descUrl": "https://en.wikipedia.org/wiki/Uranus"
+    }
+
+  ]
+}

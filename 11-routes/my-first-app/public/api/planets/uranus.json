@@ -1,0 +1,16 @@
+{
+  "satellites": [
+    {"name": "Miranda"},
+    {"name": "Ariel"},
+    {"name": "Umbriel"},
+    {"name": "Titania"},
+    {"name": "Oberon"}
+  ],
+  "data": {
+    "id": "uranus",
+    "name": "Uranus",
+    "description": "Uranus (from the Latin name Ūranus for the Greek god Οὐρανός) is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System.",
+    "img_url": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Uranus2.jpg/280px-Uranus2.jpg",
+    "link": "https://en.wikipedia.org/wiki/Uranus"
+  }
+}
